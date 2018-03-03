@@ -21,6 +21,19 @@ body { cursor: crosshair}
 <body bgcolor= "#7ee892">
 <html lang="es"></html>
 <head>
+<script type="text/javascript">
+window.setInterval (BlinkIt, 500);
+var color = "red";
+function BlinkIt () {
+var blink = document.getElementById ("blink");
+color = (color == "#ffffff")? "red" : "#ffffff";
+blink.style.color = color;
+blink.style.fontSize='36px';}
+</script>
+<div id="blink">Hola!</div>
+<div id="blink" onclick="parent.location='http://norfipc.com'">
+Hola!</div>
+
   <title> Calentamiento Global </title>
 <meta name="title" content="Calentamiento global">
 <meta charset= 'utf-8'>
