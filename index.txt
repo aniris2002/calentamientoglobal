@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+</style>
+
+<head>
+<title> Calentamiento Global</title>
+<meta charset= 'utf-8'> 
+</head>
+<body>
+<p> Hola á </p>
+</body>
+</html> 
