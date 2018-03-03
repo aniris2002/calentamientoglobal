@@ -1,3 +1,5 @@
 <!DOCTYPE html>
+<body>
 <p> Hola </p>
 <p> esto es una pagina web </p>
+</body>
