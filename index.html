@@ -54,6 +54,58 @@ body { cursor: crosshair}
 	<input type="button" value="Imprime esta página" onclick="window.print()">
 <br>
 <br>
+<TABLE border="0" cellspacing=0 width="172px">
+<TR><TD align="center">
+ <CENTER>
+   <FORM name="frmCalendario_sup">
+    
+    <SELECT name="cbMes" class=textocalendario onchange="cambiaCalendario()">
+    <SCRIPT>
+     for(var i=1;i<=12;i++){
+      var strSelected="";
+      if(i==mes) strSelected="SELECTED"
+      document.write("<OPTION value="+i+" "+strSelected+">"+getNombreMes(i));
+     }
+    </SCRIPT>
+    </SELECT>
+    <SELECT name="cbAnno" class=textocalendario onchange="cambiaCalendario()">    
+    <SCRIPT>
+     for(var i=anno-100;i<=anno+10;i++){
+      var strSelected="";
+      if(i==anno) strSelected="SELECTED"
+      document.write("<OPTION value="+i+" "+strSelected+">"+i);
+     }
+    </SCRIPT>
+
+    </SELECT>
+</FORM>
+<TABLE border="1" borderColor=red cellpading=0 cellspacing=0>
+<TR><TD>
+	<TABLE bgColor="+colorHead+" cellpading=1 cellspacing=1 border=0>
+	<TR align='center'>
+    <TD class=diascalendario style='width:15'>L</TD>
+    <TD class=diascalendario style='width:15'>M</TD>
+    <TD class=diascalendario style='width:15'>X</TD>
+
+    <TD class=diascalendario style='width:15'>J</TD>
+    <TD class=diascalendario style='width:15'>V</TD>
+    <TD class=diasfestivo style='width:15'><b>S</b></TD>
+    <TD class=diasfestivo style='width:15'><b>D</b></TD>
+    </TR>
+    </TABLE>   
+ </TD></TR>
+
+ <TR><TD>
+	<TABLE bgColor='white' id="tablacalendario" cellpading=1 cellspacing=1 border=0>
+	<tr><td>
+	</td></tr>
+    </TABLE>  
+ </TD></TR>
+ </TABLE>
+  </TD></TR>
+ </TABLE>    
+ <br>
+<br>
  <center>
     <span style="font-size: large;"><span class="Apple-style-span" style="color: #88b2f7;"><script language="JavaScript" type="text/javascript">
     //<![CDATA[
